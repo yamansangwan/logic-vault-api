@@ -5,4 +5,7 @@ const app = require("./src/app")
 const connectDB = require("./src/database/db")
 connectDB()
 
-app.listen(3000 , () => console.log("backend server is running") )
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
