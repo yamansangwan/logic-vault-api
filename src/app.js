@@ -7,7 +7,7 @@ const authRouter = require("./routes/auth.routes")
 const postRouter = require("./routes/post.routes")
 
 app.use(cors({
-    origin: ["http://localhost:5173", "http://127.0.0.1:5173", "YOUR_VERCEL_URL_HERE"], //  update the Vercel one
+    origin: ["http://localhost:5173", "http://127.0.0.1:5173", "https://logic-vault-client.vercel.app/"], 
     credentials: true // For cookies
 }));
 
